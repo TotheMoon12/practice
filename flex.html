@@ -11,10 +11,12 @@
     }
     .father {
         display: flex;
-        justify-content: flex-start; 
+        justify-content: center; 
         align-items: center; 
         height: 100%;
-        flex-direction: column; /* 컨텐츠를 열방향으로. row일 때와 달리 jstify-content와 align-items가 반대가 된다. */
+        flex-wrap: nowrap; /* 컨텐츠들이 창크기에 맞게 조절된다. wrap은 폭이 줄어들지 않고 라인이 바뀐다. */
+        flex-direction: row-reverse; /* row, row-reverse, column, column-reverse*/
+        /*flex-direction: ; /* 컨텐츠를 열방향으로. row일 때와 달리 jstify-content와 align-items가 반대가 된다. */
         /* flex-direction: row; 컨텐츠를 행방향으로 */
     }
     .box {
@@ -22,15 +24,27 @@
         width: 200px;
         height: 200px;
         margin-right: 30px;
-
+        border:1px solid black;
+        color: white;
+        display: flex;
+        justify-content : center;
+        align-items : center;
+        font-size: 40px;
     }
     </style>
 </head>
 <body>
     <div class="father">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
     </div>
 </body>
 </html>
