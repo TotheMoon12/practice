@@ -11,9 +11,11 @@
     }
     .father {
         display: flex;
-        justify-content: center; /* 컨텐츠를 중앙으로 */
-        align-items: center; /* 아이템 가운데 정렬 */
+        justify-content: flex-start; 
+        align-items: center; 
         height: 100%;
+        flex-direction: column; /* 컨텐츠를 열방향으로. row일 때와 달리 jstify-content와 align-items가 반대가 된다. */
+        /* flex-direction: row; 컨텐츠를 행방향으로 */
     }
     .box {
         background-color: red;   
